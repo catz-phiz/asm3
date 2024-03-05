@@ -1,0 +1,138 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* General styles */
+p{
+    font-size: 16px;
+    margin-bottom: 0px !important;
+}
+
+.anti-container{
+    display: grid;  
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "goals team timeline"
+        "scopes primary timeline";
+    border: 8px solid #0000ff;
+    background-color: #f0f8ff;
+}
+
+.goals{
+    grid-area: goals;
+}
+
+.team{
+    grid-area: team;
+}
+
+.scopes{
+    grid-area: scopes;
+}
+
+.primary{
+    grid-area: primary;
+}
+
+.timeline{
+    grid-area: timeline;
+}
+
+.grid__item{
+    padding: 20px;
+    border: 8px solid #0000ff;
+}
+
+.grid__item > div {
+    display: flex;
+    gap: 20px;
+}
+
+.heading-text{
+    color: #0000ff;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #bfd0cc;
+}
+
+/*More detail*/
+.goal, .member, .primary__item{
+    padding: 8px 0;
+}
+
+.goal__header, .member__header, .primary__header{
+    font-size: 36px;
+}
+.goal{
+    border-bottom: 1px solid #dce9ea;
+}
+
+.scopes h4{
+    padding: 8px 0px 16px;
+}
+
+.timeline__item{
+    padding: 32px 0 16px;
+    border-bottom: 1px dashed #79cbd1;
+}
+
+.timeline__header{
+    font-size: 20px;
+    text-align: center;
+    margin: auto 0;
+    padding: 8px 16px;
+    border-radius: 50%;
+    background-color: #9e88ff;
+    color: #fff;
+    border: 2px solid #000;
+}
+
+/* Go back Button */
+#go-back{
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #fff;
+    color: #0000ff;
+    transition: all 0.3s ease;
+}
+
+#go-back:hover{
+    background-color: #0000ff;
+    color: #fff;
+}
+
+//Mobile and Tablet View
+@media screen and (max-width: 1024px){
+    .anti-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "goals"
+            "scopes"
+            "team"
+            "primary"
+            "timeline";
+    }
+
+    .grid__item > div{ 
+        flex-direction: column
+    }
+
+    .goal__header, .member__header, .primary__header{
+        text-align: center;
+    }
+
+    .timeline__header{
+        width: 50px;
+    }
+}

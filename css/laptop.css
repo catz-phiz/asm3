@@ -1,0 +1,17 @@
+@media (min-width: 1200px) {
+    /*Cert*/
+    .cert__item:nth-child(2){
+        border-left: 1px solid #d6c08d;
+        padding-left: 20px;
+    }
+
+    .cert__item:after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -50px;
+        width: calc(100% + 1px);
+        height: 1px;
+        background-color: #d6c08d;
+    }
+}
