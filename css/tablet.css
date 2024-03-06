@@ -1,4 +1,4 @@
-@media (min-width: 770px) and (max-width: 1200px) {
+@media screen and (min-width: 750px) and (max-width: 1200px) {
     /*Navbar*/
     #nav-bar .anti-container{
         grid-template-columns: repeat(4, 1fr);
@@ -19,10 +19,15 @@
 
     /*Job info */
     #job-info .anti-container{
+        padding: 30px;
         grid-template-columns: repeat(2, 1fr);
     }
 
     /*Cert*/
+    #certificate .anti-container{
+        padding: 30px;
+    }
+
     .cert__item {
         display: block;
     }
@@ -37,6 +42,10 @@
     }
 
     /*Project*/
+    #project .anti-container{
+        padding: 30px;
+    }
+
     .project__time{
         height: 50%;
     }

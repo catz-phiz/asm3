@@ -1,4 +1,4 @@
-@media (max-width: 770px) {
+@media screen and (max-width: 750px) {
 
     /* Navbar */
     #nav-bar .anti-container {
@@ -11,7 +11,7 @@
     }
 
     .navbar__item{
-        border: none;
+        border: none !important;
         justify-content: flex-start;
         padding: 4px 0;
         margin: 0 auto;
@@ -40,17 +40,28 @@
 
     /*Job info */
     #job-info .anti-container{
+        padding: 30px;
         max-width: 100%;
         grid-template-columns: 1fr;
     }
 
     /*Cert*/
+    #certificate .anti-container{
+        padding: 30px;
+        grid-template-columns: 1fr;
+    }
+
     .cert__body {
         grid-template-columns: 1fr;
     }
     
     .cert__item{
         display: block;
+        padding-right: 0px;
+    }
+
+    .cert__item:nth-child(2){
+        margin-top: 80px;
     }
 
     .cert__img{
@@ -59,7 +70,7 @@
 
     /*Project*/
     #project .anti-container{
-        padding: 30px 50px;
+        padding: 30px;
     }
 
     .project__body {
@@ -77,6 +88,11 @@
 
     .project__detail{
         flex-direction: column;
+        gap: 15px;
+    }
+
+    /*Footer*/
+    .footer__list{
         gap: 15px;
     }
 }

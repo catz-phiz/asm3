@@ -45,8 +45,9 @@ body{
 }
 
 .banner__info h1{
-    font-size: 52px;
-    font-weight: 200;
+    margin-top: 20vh;
+    font-size: 48px;
+    font-weight: 500;
     color: #fff;
 }
 
@@ -222,6 +223,10 @@ body{
     padding-left: 16px;
 }
 
+.job__skill .job__body{
+    padding-left: 0px;
+}
+
 .job__job::marker{
     color: #199cdb;
 }
@@ -328,10 +333,16 @@ body{
 
 .cert__item{
     position: relative;
-    margin-top: 80px;
-    padding-right: 20px;
     display: grid;
     grid-template-columns: 1fr 2fr;
+}
+
+.cert__item:nth-child(odd){
+    padding-right: 20px;
+}
+
+.cert__item:last-child{
+    margin-top: 80px;
 }
 
 .cert__item:after{
